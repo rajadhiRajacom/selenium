@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>JAVA OOPS CONCEPT</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../index.html">Java Concepts</a></li>
+							<li class="active"><a href="J_OOPS.html">Java-OOPS CONCEPTS</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h2>OOPs Concepts</h2>
+								</header>
+								
+								<!-- OOPS Description -->
+								<h2>Object Oriented Programming</h2>
+
+									<p>
+									<b>O</b>bject <b>O</b>riented <b>P</b>rogramming <b>(OOPs)</b> is a programming style or paradigm or methodology based on the concept of OBJECTS, Purpose of OOP is to increase the flexibility, improve the program maintainability, code reusability and provide easy solution for large and complex problem, 
+									</p>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h3>Concepts</h3>
+											<ul>
+												<li>Object</li>
+												<li>Class</li>
+												<li>Encapsulation</li>
+												<li>Polymorphism</li>
+												<li>Inheritence</li>
+												<li>Abstraction</li>
+											</ul>
+										</div>
+									</div>
+									<p>OOPS concepts are very important and without this concepts, we’ll not be able to design proper system in the object-oriented programming model. 
+									<p>
+									</p>
+									</p>
+									<!-- one liner -->
+									<h3>One liner</h3>
+									<div class="box">
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Concept</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><b>Object</b></td>
+													<td>Instance of class</td>
+												</tr>
+												<tr>
+													<td><b>Class</b></td>
+													<td>Blue print of Object</td>
+												</tr>
+												<tr>
+													<td><b>Encapsulation</b></td>
+													<td>Protecting our data</td>
+												</tr>
+                                                <tr>
+													<td><b>Inheritence</b></td>
+													<td>one property of object is aquring to another property of object</td>
+												</tr>
+												<tr>
+													<td><b>Polymorphism</b></td>
+													<td>Different behaviors at diff. instances</td>
+												</tr>
+												<tr>
+													<td><b>Abstraction</b></td>
+													<td>Hidding our irrelavance data</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									</div>
+									<hr />
+									<!-- Object Description -->
+									<h2>Object</h2>
+									<blockquote>
+									Object is instance of class,
+									It’s basic unit of Object-Oriented Programing, An entity which has behavior and state,
+									Real world entity such as an Apple, Fan, Bottle, and TV.
+									</blockquote>
+										
+									<pre><code><b>Employee employee = new Employee();</b><br/>//Employee class details mention below class section
+									</code></pre>
+									<hr />
+							
+							
+									<!-- Class Description -->
+									<h2>Class</h2>
+									<blockquote>
+									Class is a template or blueprint  or plan which describes the object, class represent the characteristics of an object,  class would consist of a name, attributes, and operations.
+									</blockquote>
+									<pre><code>public class Employee {
+private String firstName;
+private String lastName;
+private String address;
+private int id;
+private String title;
+private double Salary;
+ 
+public Employee( String first, String last )
+{
+	firstName = first;
+	lastName = last;
+}
+
+public String getFirstName() 
+{ 
+	return firstName; 
+}
+
+public String getLastName() 
+{ 
+	return lastName; 
+}
+
+public static int getCount() 
+{ 
+	return count; 
+} 
+}								</code></pre>
+
+									<!--Encapsulation Description-->
+									<h2>Encapsulation</h2>
+									<blockquote>Encapsulation is technique of binding (restricting access) object state and behavior, providing necessary access in object state and behavior to access object state and behavior from other class, access modifier plays important role in the encapsulation. (Refer the abstraction article for more information about abstraction).
+									</blockquote>
+									<pre><code>private double Salary;<br />//It can access via getter & setter, can be restrict the access to other users</code></pre>
+									<hr />
+									<!--inheritance Description-->
+									<h2>inheritance</h2>
+									<blockquote><b> Inheritance </b> is process of acquiring features, where one class will be allowed to inherit the properties and behavior of another class. <br />
+<b>Example:  </b> Build a new class with extending the feature of other class, this provide code reusability, and new class can reuse the extended class methods and properties, and same time new class can add a new methods and properties.  <br />
+The class extends the feature of another class is called sub class or Child class or Derived class. <br />
+The class whose feature and properties inherited is called super class or  Parent class or Base class. <br />
+To inherit from a class, use the <code>extends </code> keyword.
+									</blockquote>
+									<pre><code> Public class manager extends employee{
+//Sub class, inheriting the methods and fields of employee.
+}
+Public class employee{
+//Base class, supply employee methods and fields.
+}									</code></pre>
+									<span class="image fit"><img src="../images/java/TypeInheritance.jpg" alt="" /></span>
+									 <hr />
+									<!--Polymorphism Description-->
+									<h2>Polymorphism</h2>
+									<blockquote><b>Polymorphism</b> is ability of performing single action in many forms,  there’re two type of polymorphism. </br>
+											<ul>
+												<li>Compile Time polymorphism or Static binding</li>
+												<li>Run Time polymorphism or Dynamic Binding</li>
+											</ul>
+									<h3>CompileTime polymorphism</h3>
+									It is known as static polymorphism. This type of polymorphism can be achieved by  using method overloading. </br>
+									Method overloading – Allows a class to have two or more methods with same name and but with different parameter lists 
+									</blockquote>
+
+									<pre><code>WebDriver frame (String frameName)
+WebDriver frame (int index)
+WebDriver frame (WebElement findElement)</code></pre>
+
+									<pre><code>Action contextClick()
+Action contextClick(WebElement target)</code></pre>
+
+									<pre><code>Action dragAndDrop(WebElement source, Webelement target)
+Action dragAndDrop(WebElement source, int xOffSet, int yOffSet)</code></pre>
+									<b>Constructor Overloading</b>
+									<pre><code>Public RemoteWebdriver()
+Public RemoteWebdriver(capabilities cap)
+
+Public String()
+Public String(char value[])
+Public String(char value[], int offset, int count)
+Public String(StringBuffer str)
+Public String(StringBuilder str)</code></pre>
+									<blockquote>
+									<h3> Run Time polymorphism </h3>
+									<p>
+									It is also known as dynamic polymorphism. This type of polymorphism can be achieved by method overriding, this overriding scenario will come to scope when you use inheritance. 
+									Method overriding is when one of the methods in the super class is redefined in the sub-class. In this case, the signature of the method remains the same.
+									</blockquote>
+									<pre><code>Public abstract class abstractList<>{
+Abstract public E get(int index)
+}
+Public static arrayList<E> extends AbstractList<E>{
+Public E get(int index){
+//implementation
+}	</code></pre>
+									<hr />	
+
+									<!--Abstraction Description-->
+									<h2>Abstraction	</h2>
+									<blockquote><b>Abstraction </b>- Process of hiding the implementation details and showing only functionality (relevant details) to the user, it helps to reduce programming complexity and effort.
+									Abstraction is accomplished using Abstract classes and interfaces
+									<b> <h3> Abstract Class </h3> </b>
+									A class which is declared with abstract called as an abstract class, it can contain abstract methods and concrete methods <br />
+									Normal class can’t have abstract methods. <br />
+									<b> <h3> Abstract Method </h3> </b>
+									A method which is declared with abstract and only method declaration / signature and no implementation, it called as an abstract method. all the abstract method must implement the derived class. . <br />
+									In java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces. . <br />
+									</blockquote>
+									<pre><code>public abstract class AbstractList<E> extends AbstractCollection<E> implements List<E>{
+abstract public E get(int index);
+public E set(int index, E element)
+{
+}
+}
+</pre></code>
+							<blockquote>
+							<b> <h3> Interface</b> </h3>
+							An interface is a blueprint of a class, and bringing the standard across the implementation class, 
+							Interface also like a class, an interface can have methods and variable but only declaration / signature, methods are by default abstract, it’s used to achieve the abstraction and interface can support the multiple inheritance <br />
+							Use Interface keyword <br />
+							Since Java 8, we can have default and static methods in an interface. <br />
+							Since Java 9, we can have private methods in an interface. <br />
+							</blockquote>
+							<pre><code>public interface WebDriver extends SearchContext {
+  void get(String url);
+  String getTitle();
+...
+}
+
+public class RemoteWebDriver implements WebDriver, JavascriptExecutor,FindsById, FindsByClassName, FindsByLinkText, FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive, TakesScreenshot {
+{
+  private RemoteKeyboard keyboard;
+  private RemoteMouse mouse;
+  public SessionId getSessionId() {
+    return sessionId;
+  }
+  protected void setSessionId(String opaqueKey) {
+    sessionId = new SessionId(opaqueKey);
+  }
+}
+</pre></code>
+									<hr />	
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
